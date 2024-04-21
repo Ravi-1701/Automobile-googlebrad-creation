@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Automobile Website</title>
+  </head>
+<body>
+  <header>
+    <h1>Your Automobile Brand</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#automobiles">Automobiles</a>
+      <a href="#booking">Book a Vehicle</a>
+      <a href="#tour">Schedule a Tour</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to Our Automotive Experience</h2>
+    <p>Explore our range of high-performance vehicles and find your perfect driving companion.</p>
+    <img src="images/banner.jpg" alt="Car banner image">  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a passionate team dedicated to providing exceptional automobiles and customer service.</p>
+    <p>Learn more about our history, values, and commitment to quality.</p>
+  </section>
+
+  <section id="automobiles">
+    <h2>Our Automobiles</h2>
+    <div class="car-container">
+      <div class="car">
+        <h3>Car Model 1</h3>
+        <img src="images/car1.jpg" alt="Car 1 image">  <p>Description of Car Model 1 Features</p>
+      </div>
+      <div class="car">
+        <h3>Car Model 2</h3>
+        <img src="images/car2.jpg" alt="Car 2 image">  <p>Description of Car Model 2 Features</p>
+      </div>
+      </div>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Vehicle</h2>
+    <form action="booking-process.php" method="post">  <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="vehicle">Vehicle:</label>
+      <select name="vehicle" id="vehicle">
+        <option value="">Select a Vehicle</option>
+        <option value="car1">Car Model 1</option>
+        <option value="car2">Car Model 2</option>
+        </select>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" rows="5"></textarea>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section id="tour">
+    <h2>Schedule a Tour</h2>
+    <form action="tour-appointment-process.php" method="post">  <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <
